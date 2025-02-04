@@ -21,6 +21,7 @@ header{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0, 0.1);
     align-items: center;
+    position: fixed;
 }
 .logo img{
     max-width: 15%;
@@ -269,6 +270,9 @@ footer p{
     }
 }
 @media (max-width: 768px) {
+    .header{
+        display:block;
+    }
     .hero-content h1{
         margin-bottom: 5px;
     }
@@ -283,6 +287,9 @@ footer p{
     }
 }
 @media (max-width:603px){
+    .header{
+        display:block;
+    }
     .hero-content h1{
         font-size: 2rem;
     }
@@ -291,14 +298,18 @@ footer p{
     }
 }
 @media (max-width:430px){
-    header{
-        display: none;
+    .header{
+        display:block;
     }
+    .nav-menu ul{
+        font-size:15px;
+    }
+   
     .hero-content h1{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .hero-content p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .hero-button{
         padding: 6px 22px;
@@ -455,7 +466,7 @@ body {
 
     .footer-para,
     .footer-list li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .footer-icon-container {
